@@ -3,10 +3,12 @@
  *
  * [1192] 查找集群内的「关键连接」
  */
-#include<vector>
+#include <vector>
+#include <algorithm>
 using namespace std;
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
     int time = 1;
     vector<vector<int>> bridge;
@@ -33,7 +35,8 @@ public:
         }
     }
 
-    vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
+    vector<vector<int>> criticalConnections(int n, vector<vector<int>> &connections)
+    {
         discoverTime.resize(n);
         edge.resize(n);
         father.resize(n);
@@ -48,4 +51,3 @@ public:
     }
 };
 // @lc code=end
-
