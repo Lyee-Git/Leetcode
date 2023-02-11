@@ -48,6 +48,7 @@ class Solution {
                 return true;
             used ^= 1 << i;
             bucket -= nums[i];
+            // 当我们在处理第 i 个球的时候发现无法满足要求，如果这个时候下一个球和当前球的值是一样的，那么我们就可以直接跳过下一个球
             while (i + 1 < nums.length && nums[i + 1] == nums[i])
                 i++;
         }
