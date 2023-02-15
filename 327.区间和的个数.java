@@ -38,7 +38,7 @@ class Solution {
                 start++;
             while (end <= hi && arr[end] - arr[i] <= this.high)
                 end++;
-            this.count += end - start; // (start, end]
+            this.count += end - start; // [start, end)
         }
         for (int i = lo; i <= hi; i++)
             temp[i] = arr[i];
