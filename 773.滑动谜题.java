@@ -54,6 +54,8 @@ class Solution {
         char temp = chars[i];
         chars[i] = chars[j];
         chars[j] = temp;
+        // Use new String(char[]) or String.valueOf(char[])
+        // Avoid using Arrays.toString(char[]) or char[].toString
         return new String(chars);
     }
 }
