@@ -30,7 +30,6 @@ class Solution {
         TreeNode dummy = new TreeNode(-1);
         TreeNode prevNode = dummy;
         Stack<TreeNode> st = new Stack<>();
-        st.push(root);
         TreeNode cur = root;
         while (cur != null || !st.isEmpty()) {
             while (cur != null) {
