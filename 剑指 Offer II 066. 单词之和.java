@@ -1,5 +1,5 @@
 
-class Main {
+class Solution {
     class Trie {
         public static final int R = 26;
 
@@ -73,13 +73,13 @@ class Main {
     Trie trie = new Trie();
 
     /** Initialize your data structure here. */
-    public static void main(String[] args) {
-        Main main = new Main();
-        main.insert("apple", 3);
-        main.sum("ap");
-        main.insert("app", 2);
-        main.sum("ap");
-    }
+    // public static void main(String[] args) {
+    // Main main = new Main();
+    // main.insert("apple", 3);
+    // main.sum("ap");
+    // main.insert("app", 2);
+    // main.sum("ap");
+    // }
 
     public void insert(String key, int val) {
         trie.insert(key, val);
