@@ -14,6 +14,7 @@ class Solution {
         int i = lo, j = hi;
         while (i < j) {
             while (i < j) {
+                // For every single move of pointer i or j, we need to ensure i < j
                 if (nums[j] < pivot) {
                     j--;
                 } else {
