@@ -20,12 +20,12 @@ class Solution {
             deads.add(s);
         Set<String> visited = new HashSet<>();
         while (!cur.isEmpty() && !check.isEmpty()) {
-            Set<String> temp = new HashSet<>();
             if (cur.size() > check.size()) {
-                temp = cur;
+                Set<String> temp = cur;
                 cur = check;
                 check = temp;
             }
+            Set<String> temp = new HashSet<>();
             for (String s : cur) {
                 visited.add(s);
                 if (deads.contains(s))
